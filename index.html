@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/arogyasync_logo.png" />
+    <link rel="apple-touch-icon" href="/arogyasync_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#047857" />
+    <meta name="description" content="Offline-First Telemedicine & AI Symptom Triage Platform for ASHA and Anganwadi community healthcare workers in remote villages." />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Google Fonts: Outfit + Inter + Hind (Devanagari) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>AarogyaSangini | Offline-First AI Telemedicine & Rural Triage</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Register Service Worker for offline capability
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('[AarogyaSangini] SW registered successfully:', reg.scope))
+            .catch(err => console.log('[AarogyaSangini] SW registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/* App-specific aesthetic styling */
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom transitions and interactive hover effects */
+button:hover {
+  filter: brightness(0.96);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #059669 !important;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
+}
+
+/* Pulsing red badge for emergency alerts */
+.emergency-pill {
+  animation: pulseGlow 1.8s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+}

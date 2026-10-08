@@ -1,0 +1,24 @@
+{
+  "name": "AarogyaSangini - Offline AI Telemedicine & Triage",
+  "short_name": "AarogyaSangini",
+  "description": "Offline-First AI Symptom Triage & Telemedicine Platform for Rural Health Workers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#047857",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/arogyasync_logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/arogyasync_logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
