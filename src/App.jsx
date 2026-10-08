@@ -11,6 +11,7 @@ import { TriageResultModal } from './components/TriageResultModal';
 import { DoctorPortal } from './components/DoctorPortal';
 import { VillageAnalytics } from './components/VillageAnalytics';
 import { PatientList } from './components/PatientList';
+import { SyncQueueDrawer } from './components/SyncQueueDrawer';
 import { Cpu } from 'lucide-react';
 import './App.css';
 
