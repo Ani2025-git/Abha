@@ -4,7 +4,6 @@ import { syncEngine } from './services/syncEngine';
 import { speechService } from './services/speechService';
 import { getTranslation } from './services/i18n';
 import { Navbar } from './components/Navbar';
-import { NetworkSimulator } from './components/NetworkSimulator';
 import { VoicePromptBanner } from './components/VoicePromptBanner';
 import { VoiceMicModal } from './components/VoiceMicModal';
 import { TriageForm } from './components/TriageForm';
@@ -165,17 +164,7 @@ export function App() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* 1. Interactive Network Simulator Bar */}
-      <NetworkSimulator
-        networkMode={networkMode}
-        onModeChange={handleNetworkModeChange}
-        isSyncing={isSyncing}
-        onTriggerSync={handleTriggerSync}
-        pendingCount={pendingCount}
-        currentLanguage={currentLanguage}
-      />
-
-      {/* 2. Primary Navigation Bar */}
+      {/* Primary Navigation Bar */}
       <Navbar
         activeTab={activeTab}
         onTabChange={setActiveTab}

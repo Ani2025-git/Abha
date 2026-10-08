@@ -4,7 +4,7 @@ import { db } from '../db/database';
 
 class SyncEngine {
   constructor() {
-    this.networkMode = 'offline'; // 'online' | 'spotty' | 'offline'
+    this.networkMode = typeof navigator !== 'undefined' && navigator.onLine ? 'online' : 'offline';
     this.isSyncing = false;
     this.listeners = new Set();
     this.initNetworkListeners();
