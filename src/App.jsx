@@ -206,22 +206,9 @@ export function App() {
                 <h2 style={{ fontSize: '26px', fontWeight: '800', color: '#064e3b', margin: '0 0 8px 0', lineHeight: '1.2' }}>
                   {t('heroTitle')}
                 </h2>
-                <p style={{ fontSize: '14px', color: '#334155', margin: '0 0 16px 0', lineHeight: '1.5' }}>
+                <p style={{ fontSize: '14px', color: '#334155', margin: '0', lineHeight: '1.5' }}>
                   {t('heroSubtitle')}
                 </p>
-
-                {/* Key feature pills */}
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', fontSize: '12px' }}>
-                  <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '4px 10px', borderRadius: '8px', color: '#334155', fontWeight: '600' }}>
-                    {t('heroTag1')}
-                  </span>
-                  <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '4px 10px', borderRadius: '8px', color: '#334155', fontWeight: '600' }}>
-                    {t('heroTag2')}
-                  </span>
-                  <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '4px 10px', borderRadius: '8px', color: '#334155', fontWeight: '600' }}>
-                    {t('heroTag3')}
-                  </span>
-                </div>
               </div>
 
               {/* Hero Image Illustration */}
