@@ -1,15 +1,11 @@
 import React from 'react';
 import {
-  TrendingUp,
   AlertTriangle,
   MapPin,
   Flame,
-  ShieldCheck,
-  Droplets,
   Activity,
   Heart,
-  Baby,
-  Users
+  Baby
 } from 'lucide-react';
 
 export function VillageAnalytics({ triages = [], patients = [] }) {

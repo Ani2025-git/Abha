@@ -4,11 +4,7 @@ import {
   RefreshCw,
   CheckCircle2,
   Clock,
-  AlertTriangle,
-  X,
-  Send,
-  Radio,
-  FileText
+  X
 } from 'lucide-react';
 
 export function SyncQueueDrawer({

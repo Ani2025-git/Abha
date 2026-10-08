@@ -11,8 +11,7 @@ import { TriageResultModal } from './components/TriageResultModal';
 import { DoctorPortal } from './components/DoctorPortal';
 import { VillageAnalytics } from './components/VillageAnalytics';
 import { PatientList } from './components/PatientList';
-import { SyncQueueDrawer } from './components/SyncQueueDrawer';
-import { Sparkles, Cpu } from 'lucide-react';
+import { Cpu } from 'lucide-react';
 import './App.css';
 
 export function App() {
@@ -22,7 +21,7 @@ export function App() {
   const [selectedPatientId, setSelectedPatientId] = useState(null);
 
   // Network & Sync State
-  const [networkMode, setNetworkMode] = useState('offline'); // Default offline to highlight offline-first capability
+  const [networkMode, setNetworkMode] = useState(typeof navigator !== 'undefined' && navigator.onLine ? 'online' : 'offline');
   const [isSyncing, setIsSyncing] = useState(false);
   const [pendingCount, setPendingCount] = useState(0);
   const [isQueueDrawerOpen, setIsQueueDrawerOpen] = useState(false);
@@ -88,11 +87,6 @@ export function App() {
     }
   };
 
-  // Switch network mode simulator
-  const handleNetworkModeChange = (mode) => {
-    setNetworkMode(mode);
-    syncEngine.setNetworkMode(mode);
-  };
 
   // Trigger sync manually
   const handleTriggerSync = async () => {
@@ -172,7 +166,6 @@ export function App() {
         onOpenSyncQueue={() => setIsQueueDrawerOpen(true)}
         currentLanguage={currentLanguage}
         onLanguageChange={handleLanguageChange}
-        networkMode={networkMode}
       />
 
       {/* 3. Main Body */}

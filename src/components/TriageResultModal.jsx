@@ -10,8 +10,7 @@ import {
   ShieldAlert,
   Info,
   QrCode,
-  Printer,
-  Check
+  Printer
 } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
 import { speechService } from '../services/speechService';

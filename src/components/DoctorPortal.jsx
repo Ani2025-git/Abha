@@ -2,17 +2,10 @@ import React, { useState } from 'react';
 import {
   Stethoscope,
   AlertTriangle,
-  CheckCircle,
-  Clock,
-  Send,
   FileCheck,
-  Volume2,
-  Calendar,
-  User,
   Activity,
   Plus,
   Trash2,
-  Download,
   ShieldCheck
 } from 'lucide-react';
 import { db } from '../db/database';

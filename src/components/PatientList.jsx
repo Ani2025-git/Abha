@@ -1,14 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {
-  Users,
   Search,
   Plus,
   QrCode,
   ScanLine,
-  Heart,
-  Baby,
   Activity,
-  Calendar,
   Phone,
   MapPin,
   Check,
@@ -17,7 +13,6 @@ import {
   Printer,
   Copy,
   Camera,
-  Upload,
   Sparkles
 } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
